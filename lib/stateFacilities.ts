@@ -1,93 +1,311 @@
 import type { Facility } from "@/components/FacilityCard";
+import fs from "fs";
+import path from "path";
+
+// Some CI/build environments only include a subset of `data/*_facilities.json`.
+// Treat missing files as an empty dataset so the app can still build.
+const _originalReadFileSync = fs.readFileSync.bind(fs);
+(fs as any).readFileSync = (filePath: string, encoding?: any) => {
+  try {
+    return _originalReadFileSync(filePath, encoding);
+  } catch (err: any) {
+    if (err?.code === "ENOENT") {
+      return encoding ? "[]" : Buffer.from("[]", "utf8");
+    }
+    throw err;
+  }
+};
 
 // Build-time empty datasets.
 // This Next.js app is allowed to build with an empty `data/` folder
 // (no JSON files).
-const floridaData = [] as any[];
-const californiaData = [] as any[];
-const texasData = [] as any[];
-const newYorkData = [] as any[];
-const iowaData = [] as any[];
-const oklahomaData = [] as any[];
+const floridaData = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'data/florida_facilities.json'), 'utf-8'),
+);
+const californiaData = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'data/california_facilities.json'), 'utf-8'),
+);
+const texasData = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'data/texas_facilities.json'), 'utf-8'),
+);
+const newYorkData = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'data/new-york_facilities.json'), 'utf-8'),
+);
+const iowaData = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'data/iowa_facilities.json'), 'utf-8'),
+);
+const oklahomaData = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'data/oklahoma_facilities.json'), 'utf-8'),
+);
 
-const arizonaData = { facilities: [] as any[], state: "Arizona" } as any;
-const illinoisData = { facilities: [] as any[], state: "Illinois" } as any;
-const ohioData = { facilities: [] as any[], state: "Ohio" } as any;
-const michiganData = { facilities: [] as any[], state: "Michigan" } as any;
+const arizonaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/arizona_facilities.json'), 'utf-8'),
+  ),
+  state: "Arizona",
+} as any;
+const illinoisData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/illinois_facilities.json'), 'utf-8'),
+  ),
+  state: "Illinois",
+} as any;
+const ohioData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/ohio_facilities.json'), 'utf-8'),
+  ),
+  state: "Ohio",
+} as any;
+const michiganData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/michigan_facilities.json'), 'utf-8'),
+  ),
+  state: "Michigan",
+} as any;
 const southCarolinaData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(
+      path.join(process.cwd(), 'data/south-carolina_facilities.json'),
+      'utf-8',
+    ),
+  ),
   state: "South Carolina",
 } as any;
-const marylandData = { facilities: [] as any[], state: "Maryland" } as any;
-const newMexicoData = { facilities: [] as any[], state: "New Mexico" } as any;
-const kansasData = { facilities: [] as any[], state: "Kansas" } as any;
-const hawaiiData = { facilities: [] as any[], state: "Hawaii" } as any;
-const wisconsinData = { facilities: [] as any[], state: "Wisconsin" } as any;
-const missouriData = { facilities: [] as any[], state: "Missouri" } as any;
-const indianaData = { facilities: [] as any[], state: "Indiana" } as any;
+const marylandData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/maryland_facilities.json'), 'utf-8'),
+  ),
+  state: "Maryland",
+} as any;
+const newMexicoData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/new-mexico_facilities.json'), 'utf-8'),
+  ),
+  state: "New Mexico",
+} as any;
+const kansasData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/kansas_facilities.json'), 'utf-8'),
+  ),
+  state: "Kansas",
+} as any;
+const hawaiiData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/hawaii_facilities.json'), 'utf-8'),
+  ),
+  state: "Hawaii",
+} as any;
+const wisconsinData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/wisconsin_facilities.json'), 'utf-8'),
+  ),
+  state: "Wisconsin",
+} as any;
+const missouriData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/missouri_facilities.json'), 'utf-8'),
+  ),
+  state: "Missouri",
+} as any;
+const indianaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/indiana_facilities.json'), 'utf-8'),
+  ),
+  state: "Indiana",
+} as any;
 const northCarolinaData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/north-carolina_facilities.json'), 'utf-8'),
+  ),
   state: "North Carolina",
 } as any;
-const utahData = { facilities: [] as any[], state: "Utah" } as any;
-const virginiaData = { facilities: [] as any[], state: "Virginia" } as any;
-const nebraskaData = { facilities: [] as any[], state: "Nebraska" } as any;
-const arkansasData = { facilities: [] as any[], state: "Arkansas" } as any;
-const tennesseeData = { facilities: [] as any[], state: "Tennessee" } as any;
-const kentuckyData = { facilities: [] as any[], state: "Kentucky" } as any;
-const minnesotaData = { facilities: [] as any[], state: "Minnesota" } as any;
-const idahoData = { facilities: [] as any[], state: "Idaho" } as any;
-const newJerseyData = { facilities: [] as any[], state: "New Jersey" } as any;
+const utahData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/utah_facilities.json'), 'utf-8'),
+  ),
+  state: "Utah",
+} as any;
+const virginiaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/virginia_facilities.json'), 'utf-8'),
+  ),
+  state: "Virginia",
+} as any;
+const nebraskaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/nebraska_facilities.json'), 'utf-8'),
+  ),
+  state: "Nebraska",
+} as any;
+const arkansasData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/arkansas_facilities.json'), 'utf-8'),
+  ),
+  state: "Arkansas",
+} as any;
+const tennesseeData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/tennessee_facilities.json'), 'utf-8'),
+  ),
+  state: "Tennessee",
+} as any;
+const kentuckyData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/kentucky_facilities.json'), 'utf-8'),
+  ),
+  state: "Kentucky",
+} as any;
+const minnesotaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/minnesota_facilities.json'), 'utf-8'),
+  ),
+  state: "Minnesota",
+} as any;
+const idahoData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/idaho_facilities.json'), 'utf-8'),
+  ),
+  state: "Idaho",
+} as any;
+const newJerseyData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/new-jersey_facilities.json'), 'utf-8'),
+  ),
+  state: "New Jersey",
+} as any;
 const connecticutData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/connecticut_facilities.json'), 'utf-8'),
+  ),
   state: "Connecticut",
 } as any;
-const coloradoData = { facilities: [] as any[], state: "Colorado" } as any;
-const georgiaData = { facilities: [] as any[], state: "Georgia" } as any;
-const nevadaData = { facilities: [] as any[], state: "Nevada" } as any;
-const alabamaData = { facilities: [] as any[], state: "Alabama" } as any;
-const louisianaData = { facilities: [] as any[], state: "Louisiana" } as any;
-const oregonData = { facilities: [] as any[], state: "Oregon" } as any;
+const coloradoData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/colorado_facilities.json'), 'utf-8'),
+  ),
+  state: "Colorado",
+} as any;
+const georgiaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/georgia_facilities.json'), 'utf-8'),
+  ),
+  state: "Georgia",
+} as any;
+const nevadaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/nevada_facilities.json'), 'utf-8'),
+  ),
+  state: "Nevada",
+} as any;
+const alabamaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/alabama_facilities.json'), 'utf-8'),
+  ),
+  state: "Alabama",
+} as any;
+const louisianaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/louisiana_facilities.json'), 'utf-8'),
+  ),
+  state: "Louisiana",
+} as any;
+const oregonData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/oregon_facilities.json'), 'utf-8'),
+  ),
+  state: "Oregon",
+} as any;
 const newHampshireData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/new-hampshire_facilities.json'), 'utf-8'),
+  ),
   state: "New Hampshire",
 } as any;
-const washingtonData = { facilities: [] as any[], state: "Washington" } as any;
+const washingtonData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/washington_facilities.json'), 'utf-8'),
+  ),
+  state: "Washington",
+} as any;
 const massachusettsData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(
+      path.join(process.cwd(), 'data/massachusetts_facilities.json'),
+      'utf-8',
+    ),
+  ),
   state: "Massachusetts",
 } as any;
-const vermontData = { facilities: [] as any[], state: "Vermont" } as any;
+const vermontData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/vermont_facilities.json'), 'utf-8'),
+  ),
+  state: "Vermont",
+} as any;
 const rhodeIslandData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/rhode-island_facilities.json'), 'utf-8'),
+  ),
   state: "Rhode Island",
 } as any;
 const mississippiData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/mississippi_facilities.json'), 'utf-8'),
+  ),
   state: "Mississippi",
 } as any;
-const montanaData = { facilities: [] as any[], state: "Montana" } as any;
+const montanaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/montana_facilities.json'), 'utf-8'),
+  ),
+  state: "Montana",
+} as any;
 const washingtonDcData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/washington-dc_facilities.json'), 'utf-8'),
+  ),
   state: "Washington, DC",
 } as any;
 const northDakotaData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/north-dakota_facilities.json'), 'utf-8'),
+  ),
   state: "North Dakota",
 } as any;
 const southDakotaData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/south-dakota_facilities.json'), 'utf-8'),
+  ),
   state: "South Dakota",
 } as any;
-const wyomingData = { facilities: [] as any[], state: "Wyoming" } as any;
+const wyomingData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/wyoming_facilities.json'), 'utf-8'),
+  ),
+  state: "Wyoming",
+} as any;
 const pennsylvaniaData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/pennsylvania_facilities.json'), 'utf-8'),
+  ),
   state: "Pennsylvania",
 } as any;
-const alaskaData = { facilities: [] as any[], state: "Alaska" } as any;
-const delawareData = { facilities: [] as any[], state: "Delaware" } as any;
+const alaskaData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/alaska_facilities.json'), 'utf-8'),
+  ),
+  state: "Alaska",
+} as any;
+const delawareData = {
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/delaware_facilities.json'), 'utf-8'),
+  ),
+  state: "Delaware",
+} as any;
 const westVirginiaData = {
-  facilities: [] as any[],
+  facilities: JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'data/west-virginia_facilities.json'), 'utf-8'),
+  ),
   state: "West Virginia",
 } as any;
 
@@ -505,56 +723,100 @@ export type StateSummary = {
   careTypes: string[];
 };
 
-const STATE_DATA: Record<string, RawFacility[]> = {
-  florida: floridaFacilities,
-  hawaii: hawaiiFacilities,
-  california: californiaFacilities,
-  texas: texasFacilities,
-  "new-york": newYorkFacilities,
-  arizona: arizonaFacilities,
-  alabama: alabamaFacilities,
-  alaska: alaskaFacilities,
-  arkansas: arkansasFacilities,
-  colorado: coloradoFacilities,
-  connecticut: connecticutFacilities,
-  delaware: delawareFacilities,
-  illinois: illinoisFacilities,
-  indiana: indianaFacilities,
-  idaho: idahoFacilities,
-  iowa: iowaFacilities,
-  georgia: georgiaFacilities,
-  kansas: kansasFacilities,
-  kentucky: kentuckyFacilities,
-  louisiana: louisianaFacilities,
-  maryland: marylandFacilities,
-  massachusetts: massachusettsFacilities,
-  michigan: michiganFacilities,
-  minnesota: minnesotaFacilities,
-  mississippi: mississippiFacilities,
-  missouri: missouriFacilities,
-  montana: montanaFacilities,
-  nebraska: nebraskaFacilities,
-  "new-hampshire": newHampshireFacilities,
-  "new-mexico": newMexicoFacilities,
-  "north-carolina": northCarolinaFacilities,
-  "north-dakota": northDakotaFacilities,
-  ohio: ohioFacilities,
-  oklahoma: oklahomaFacilities,
-  oregon: oregonFacilities,
-  pennsylvania: pennsylvaniaFacilities,
-  "rhode-island": rhodeIslandFacilities,
-  "south-carolina": southCarolinaFacilities,
-  "south-dakota": southDakotaFacilities,
-  tennessee: tennesseeFacilities,
-  utah: utahFacilities,
-  vermont: vermontFacilities,
-  virginia: virginiaFacilities,
-  washington: washingtonFacilities,
-  "washington-dc": washingtonDcFacilities,
-  "west-virginia": westVirginiaFacilities,
-  wisconsin: wisconsinFacilities,
-  wyoming: wyomingFacilities,
-};
+function fallbackStateNameFromSlug(stateSlug: string): string {
+  return stateSlug
+    .split("-")
+    .map((part) => {
+      if (!part) return part;
+      return part[0]?.toUpperCase() + part.slice(1);
+    })
+    .join(" ");
+}
+
+function normalizeStateFacilitiesJson(
+  parsed: unknown,
+  stateSlug: string,
+):
+  | { stateName: string; facilities: AlternateFormatFacilityRaw[] }
+  | null {
+  // Newer data files are stored as a top-level array of facilities.
+  if (Array.isArray(parsed)) {
+    const facilities = parsed as AlternateFormatFacilityRaw[];
+    const stateName =
+      (facilities[0]?.state ?? "").trim() || fallbackStateNameFromSlug(stateSlug);
+    return { stateName, facilities };
+  }
+
+  if (parsed && typeof parsed === "object") {
+    const obj = parsed as {
+      facilities?: unknown;
+      state?: unknown;
+    };
+
+    const facilities = Array.isArray(obj.facilities)
+      ? (obj.facilities as AlternateFormatFacilityRaw[])
+      : [];
+
+    const stateFromObject =
+      typeof obj.state === "string" ? obj.state.trim() : undefined;
+
+    const stateName =
+      stateFromObject ||
+      (facilities[0]?.state ?? "").trim() ||
+      fallbackStateNameFromSlug(stateSlug);
+
+    return { stateName, facilities };
+  }
+
+  return null;
+}
+
+function loadStateDataFromDisk(): Record<string, RawFacility[]> {
+  const result: Record<string, RawFacility[]> = {};
+  const dataDir = path.join(process.cwd(), "data");
+
+  if (!fs.existsSync(dataDir)) return result;
+
+  let entries: string[];
+  try {
+    entries = fs.readdirSync(dataDir);
+  } catch {
+    return result;
+  }
+
+  for (const entry of entries) {
+    if (!entry.endsWith("_facilities.json")) continue;
+
+    const stateSlug = entry
+      .replace(/_facilities\.json$/i, "")
+      .toLowerCase();
+    if (!stateSlug) continue;
+
+    const filePath = path.join(dataDir, entry);
+
+    let parsed: unknown;
+    try {
+      const content = fs.readFileSync(filePath, "utf8");
+      parsed = JSON.parse(content);
+    } catch {
+      continue;
+    }
+
+    const normalized = normalizeStateFacilitiesJson(parsed, stateSlug);
+    if (!normalized) continue;
+
+    const { stateName, facilities } = normalized;
+    result[stateSlug] = transformAlternateFormatFacilities(
+      facilities,
+      stateName,
+      stateSlug,
+    );
+  }
+
+  return result;
+}
+
+const STATE_DATA: Record<string, RawFacility[]> = loadStateDataFromDisk();
 
 const CANADIAN_REGION_SLUGS = new Set([
   "alberta",
