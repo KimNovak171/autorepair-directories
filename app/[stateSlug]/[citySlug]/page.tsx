@@ -8,7 +8,7 @@ import {
   getOtherCitiesInState,
 } from "@/lib/stateFacilities";
 
-const siteUrl = "https://speechtherapydirectories.com";
+const siteUrl = "https://autorepairdirectories.com";
 
 type CityPageProps = {
   params: Promise<{ stateSlug: string; citySlug: string }>;
@@ -27,8 +27,8 @@ export async function generateMetadata({
   const { stateName, cityName, facilities: cityFacilities } =
     await getCityFacilities(safeState, safeCity);
   const count = Array.isArray(cityFacilities) ? cityFacilities.length : 0;
-  const title = `Speech Therapy Shops in ${cityName}, ${stateName} | Speech Therapy Directories`;
-  const description = `Find ${count.toLocaleString()} speech therapy practices in ${cityName}, ${stateName}. Compare services and practice details. Verified listings with ratings and reviews.`;
+  const title = `Auto Repair Shops in ${cityName}, ${stateName} | Auto Repair Directories`;
+  const description = `Find ${count.toLocaleString()} auto repair shops in ${cityName}, ${stateName}. Compare services and shop details. Verified listings with ratings and reviews.`;
 
   return {
     title,
@@ -43,14 +43,14 @@ export async function generateMetadata({
       title,
       description,
       url: canonicalPath,
-      siteName: "SpeechTherapyDirectories.com",
+      siteName: "AutoRepairDirectories.com",
       type: "website",
       images: [
         {
           url: "/og-image.svg",
           width: 1200,
           height: 630,
-          alt: `${cityName}, ${stateName} speech therapy practice directory preview`,
+          alt: `${cityName}, ${stateName} auto repair shop directory preview`,
         },
       ],
     },
@@ -74,8 +74,6 @@ export default async function CityPage({ params }: CityPageProps) {
     stateName,
     cityName,
     facilities: facilitiesRaw,
-    totalFacilities,
-    citiesCount,
   } = await getCityFacilities(stateSlug ?? "", citySlug ?? "");
   const facilities = [...facilitiesRaw].sort((a, b) => {
     const score = (f: { featured?: boolean; premium?: boolean }) =>
@@ -101,7 +99,7 @@ export default async function CityPage({ params }: CityPageProps) {
   const careTypesText =
     careTypes.length > 0
       ? careTypes.slice(0, 4).join(", ")
-      : "speech therapy services";
+      : "auto repair services";
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -110,7 +108,7 @@ export default async function CityPage({ params }: CityPageProps) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "SpeechTherapyDirectories.com",
+        name: "AutoRepairDirectories.com",
         item: `${siteUrl}/`,
       },
       {
@@ -131,37 +129,41 @@ export default async function CityPage({ params }: CityPageProps) {
   const webpageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `Speech Therapy Shops in ${cityName}, ${stateName}`,
+    name: `Auto Repair Shops in ${cityName}, ${stateName}`,
     url: `${siteUrl}/${stateSlugNorm}/${citySlugNorm}`,
     isPartOf: {
       "@type": "WebSite",
-      name: "SpeechTherapyDirectories.com",
+      name: "AutoRepairDirectories.com",
       url: `${siteUrl}/`,
     },
     about: [
       {
         "@type": "Thing",
-        name: `${cityName} speech therapy practices`,
+        name: `${cityName} auto repair shops`,
       },
       {
         "@type": "Thing",
-        name: `${stateName} speech therapy services`,
+        name: `${stateName} auto repair services`,
       },
       {
         "@type": "Thing",
-        name: "Speech evaluation",
+        name: "Diagnostics",
       },
       {
         "@type": "Thing",
-        name: "Language support",
+        name: "Brake service",
       },
       {
         "@type": "Thing",
-        name: "Fluency therapy",
+        name: "Tire rotation",
       },
       {
         "@type": "Thing",
-        name: "Feeding support",
+        name: "Oil changes",
+      },
+      {
+        "@type": "Thing",
+        name: "Engine repair",
       },
     ],
     speakable: {
@@ -182,20 +184,20 @@ export default async function CityPage({ params }: CityPageProps) {
       />
       <header className="space-y-4">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal">
-          Speech therapy by city
+          Auto repair by city
         </p>
         <h1 className="text-3xl font-semibold text-navy">
-          Speech Therapy Shops in {cityName}, {stateName}
+          Auto Repair Shops in {cityName}, {stateName}
         </h1>
         <p className="max-w-2xl text-sm text-slate-600">
           {cityName} has {facilities.length.toLocaleString()} verified
-          speech therapy practices including {careTypesText}. Browse all options
+          auto repair shops including {careTypesText}. Browse all options
           below, each with Google Maps profile links and ratings data where
           available.
         </p>
         <p className="max-w-2xl text-sm text-slate-600">
-          Compare practices side by side, review services and contact
-          details, and share this page with fellow caregivers as you plan next
+          Compare shops side by side, review services and contact
+          details, and share this page with fellow drivers as you plan next
           steps in {stateName}.
         </p>
       </header>
@@ -231,16 +233,13 @@ export default async function CityPage({ params }: CityPageProps) {
 
         {facilities.length === 0 ? (
           <p className="text-sm text-slate-600">
-            We don&apos;t have practices listed for {cityName}, {stateName} yet.
-            As new data becomes available, practices will appear here.
+            We don&apos;t have shops listed for {cityName}, {stateName} yet.
+            As new data becomes available, shops will appear here.
           </p>
         ) : (
           <div className="grid gap-4 md:grid-cols-2">
             {facilities.map((facility) => (
-              <FacilityCard
-                key={facility.id}
-                facility={facility}
-              />
+              <FacilityCard key={facility.id} facility={facility} />
             ))}
           </div>
         )}
@@ -274,4 +273,3 @@ export default async function CityPage({ params }: CityPageProps) {
     </main>
   );
 }
-

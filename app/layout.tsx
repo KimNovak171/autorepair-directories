@@ -16,29 +16,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://SpeechTherapistDirectories.com"),
+  metadataBase: new URL("https://autorepairdirectories.com"),
   title: {
-    default: "SpeechTherapistDirectories.com | Speech Therapist Directory",
-    template: "%s | SpeechTherapistDirectories.com",
+    default: "AutoRepairDirectories.com | Auto Repair Directory",
+    template: "%s | AutoRepairDirectories.com",
   },
   description:
-    "SpeechTherapistDirectories.com is a professional, easy-to-use Speech Therapy directory helping families find local speech pathologists and services across the United States and Canada.",
+    "AutoRepairDirectories.com is a professional, easy-to-use Auto Repair directory helping drivers find local auto repair shops and services across the United States and Canada.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "SpeechTherapistDirectories.com | Speech Therapist Directory",
+    title: "AutoRepairDirectories.com | Auto Repair Directory",
     description:
-      "Trusted resource to explore and compare speech pathologists and services across North America.",
+      "Trusted resource to explore and compare auto repair shops and services across North America.",
     url: "/",
-    siteName: "SpeechTherapistDirectories.com",
+    siteName: "AutoRepairDirectories.com",
     type: "website",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "SpeechTherapistDirectories.com logo preview",
+        alt: "AutoRepairDirectories.com logo preview",
       },
     ],
   },
@@ -69,9 +69,9 @@ export default async function RootLayout({
                 <Link
                   href="/"
                   className="text-[11px] font-bold tracking-[0.28em] sm:text-xs text-white hover:text-gold-soft transition-colors"
-                  aria-label="SpeechTherapistDirectories.com – go to homepage"
+                  aria-label="AutoRepairDirectories.com – go to homepage"
                 >
-                  SpeechTherapistDirectories.com
+                  AutoRepairDirectories.com
                 </Link>
                 <nav className="flex items-center gap-4" aria-label="Main navigation">
                   <Link
@@ -101,7 +101,7 @@ export default async function RootLayout({
                 </nav>
               </div>
               <p className="ml-4 hidden max-w-xs text-right text-xs text-gold-soft sm:block">
-                Trusted Speech Therapist directory for families and caregivers.
+                Trusted Auto Repair directory for drivers.
               </p>
             </div>
           </header>
@@ -181,7 +181,7 @@ export default async function RootLayout({
           <footer className="w-full border-t border-navy/10 bg-background">
             <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 text-xs text-foreground/80 sm:px-6 lg:px-8">
               <p>
-                © {new Date().getFullYear()} SpeechTherapistDirectories.com. For
+                © {new Date().getFullYear()} AutoRepairDirectories.com. For
                 informational purposes only – always verify licensing,
                 certifications, and safety requirements with your local authority.
               </p>
@@ -199,7 +199,7 @@ export default async function RootLayout({
                   Advertise
                 </Link>
                 <Link href="/advertise" className="hover:text-gold">
-                  For speech pathologists
+                  For auto repair shops
                 </Link>
                 <Link href="/advertise" className="hover:text-gold">
                   Featured Listing

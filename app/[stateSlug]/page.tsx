@@ -8,7 +8,7 @@ import {
   getStateSummary,
 } from "@/lib/stateFacilities";
 
-const siteUrl = "https://speechtherapydirectories.com";
+const siteUrl = "https://autorepairdirectories.com";
 
 type StatePageProps = {
   params: Promise<{ stateSlug: string }>;
@@ -25,9 +25,9 @@ export async function generateMetadata({
 
   const { stateName, totalFacilities, cities } = await getStateSummary(safeSlug);
 
-  const title = `Speech Therapy Shops in ${stateName} | ${totalFacilities.toLocaleString()} Verified Shops | SpeechTherapyDirectories.com`;
+  const title = `Auto Repair Shops in ${stateName} | ${totalFacilities.toLocaleString()} Verified Shops | AutoRepairDirectories.com`;
 
-  const descriptor = `Browse ${totalFacilities.toLocaleString()} verified speech therapy practices across ${cities.length.toLocaleString()} ${stateName} cities. speech evaluations, articulation therapy, language support, and more — all rated 3 stars or higher.`;
+  const descriptor = `Browse ${totalFacilities.toLocaleString()} verified auto repair shops across ${cities.length.toLocaleString()} ${stateName} cities. Diagnostics, brake service, tire rotation, and more — all rated 3 stars or higher.`;
 
   return {
     title,
@@ -42,14 +42,14 @@ export async function generateMetadata({
       title,
       description: descriptor,
       url: canonicalPath,
-      siteName: "SpeechTherapyDirectories.com",
+      siteName: "AutoRepairDirectories.com",
       type: "website",
       images: [
         {
           url: "/og-image.svg",
           width: 1200,
           height: 630,
-          alt: `${stateName} speech therapy practice directory preview`,
+          alt: `${stateName} auto repair shop directory preview`,
         },
       ],
     },
@@ -73,7 +73,15 @@ export default async function StatePage({ params }: StatePageProps) {
     careTypes,
   } = await getStateSummary(stateSlug ?? "");
   const resourcesUrl = getStateResourcesUrl(resolvedStateSlug);
-  const careTypesText = (["speech evaluation", "language support", "fluency therapy", "feeding support"] as const).join(", ");
+  const careTypesText = (
+    [
+      "diagnostics",
+      "brake service",
+      "tire rotation",
+      "oil changes",
+      "engine repair",
+    ] as const
+  ).join(", ");
   const majorCities = [...cities]
     .sort((a, b) => b.facilityCount - a.facilityCount)
     .slice(0, 6)
@@ -85,7 +93,7 @@ export default async function StatePage({ params }: StatePageProps) {
   const careTypesSentence =
     topCareTypes.length > 0
       ? topCareTypes.join(", ")
-      : "speech evaluation, language support, fluency therapy, and feeding support";
+      : "diagnostics, brake service, tire rotation, oil changes, and engine repair";
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -94,7 +102,7 @@ export default async function StatePage({ params }: StatePageProps) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "SpeechTherapyDirectories.com",
+        name: "AutoRepairDirectories.com",
         item: `${siteUrl}/`,
       },
       {
@@ -112,15 +120,15 @@ export default async function StatePage({ params }: StatePageProps) {
     mainEntity: [
       {
         "@type": "Question",
-        name: `How many speech therapy practices are in ${stateName}?`,
+        name: `How many auto repair shops are in ${stateName}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Our directory lists ${totalFacilities.toLocaleString()} verified facilities across ${cities.length.toLocaleString()} cities.`,
+          text: `Our directory lists ${totalFacilities.toLocaleString()} verified shops across ${cities.length.toLocaleString()} cities.`,
         },
       },
       {
         "@type": "Question",
-        name: `What types of speech therapy services are available in ${stateName}?`,
+        name: `What types of auto repair services are available in ${stateName}?`,
         acceptedAnswer: {
           "@type": "Answer",
           text: `${careTypesSentence}.`,
@@ -128,10 +136,10 @@ export default async function StatePage({ params }: StatePageProps) {
       },
       {
         "@type": "Question",
-        name: "How are practices selected for this directory?",
+        name: "How are shops selected for this directory?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "All practices are sourced from Google Maps, verified, and must have a minimum 3-star rating.",
+          text: "All shops are sourced from Google Maps, verified, and must have a minimum 3-star rating.",
         },
       },
     ],
@@ -140,33 +148,37 @@ export default async function StatePage({ params }: StatePageProps) {
   const webpageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `Speech Therapy Shops in ${stateName}`,
+    name: `Auto Repair Shops in ${stateName}`,
     url: `${siteUrl}/${resolvedStateSlug}`,
     isPartOf: {
       "@type": "WebSite",
-      name: "SpeechTherapyDirectories.com",
+      name: "AutoRepairDirectories.com",
       url: `${siteUrl}/`,
     },
     about: [
       {
         "@type": "Thing",
-        name: `${stateName} speech therapy practices`,
+        name: `${stateName} auto repair shops`,
       },
       {
         "@type": "Thing",
-        name: "Speech evaluation",
+        name: "Diagnostics",
       },
       {
         "@type": "Thing",
-        name: "Language support",
+        name: "Brake service",
       },
       {
         "@type": "Thing",
-        name: "Fluency therapy",
+        name: "Tire rotation",
       },
       {
         "@type": "Thing",
-        name: "Feeding support",
+        name: "Oil changes",
+      },
+      {
+        "@type": "Thing",
+        name: "Engine repair",
       },
     ],
     speakable: {
@@ -202,14 +214,14 @@ export default async function StatePage({ params }: StatePageProps) {
         className="mb-4 flex items-center justify-center gap-2 rounded-full bg-teal px-5 py-3 text-center text-sm font-semibold text-white shadow-md transition hover:bg-teal-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
         aria-label="View featured listing pricing and benefits"
       >
-        Get your practice featured — view pricing &amp; benefits →
+        Get your shop featured — view pricing &amp; benefits →
       </Link>
       <section className="rounded-2xl bg-surface-muted px-5 py-6 text-foreground shadow-lg shadow-navy/10 ring-1 ring-gold/40 sm:px-8 sm:py-8">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
           State overview
         </p>
         <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">
-          Speech Therapy Shops in {stateName}
+          Auto Repair Shops in {stateName}
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-foreground/80">
           Explore {careTypesText} across {stateName}, including major city
@@ -221,7 +233,7 @@ export default async function StatePage({ params }: StatePageProps) {
             rel="noopener noreferrer"
             className="underline underline-offset-2 hover:text-gold-soft"
           >
-            official {stateName} speech therapy consumer resources
+            official {stateName} auto repair consumer resources
           </a>{" "}
           for licensing, inspections, and consumer support.
         </p>
@@ -268,7 +280,7 @@ export default async function StatePage({ params }: StatePageProps) {
               Top Picks in {stateName}
             </h2>
             <p className="text-sm text-slate-600">
-              Featured communities in {stateName} — verified listings with priority placement.
+              Featured shops in {stateName} — verified listings with priority placement.
             </p>
             <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {featuredFacilities.map((facility) => (
@@ -283,12 +295,12 @@ export default async function StatePage({ params }: StatePageProps) {
         <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-navy border-b-2 border-teal/50 pb-1 inline-block">
-              Speech Therapy Shops by City in {stateName}
+              Auto Repair Shops by City in {stateName}
             </h2>
             <p className="mt-1 max-w-2xl text-sm text-slate-600">
-              Choose a city to view all listed speech therapy practices, including
-              common services like speech evaluation, language support, and tire
-              service.
+              Choose a city to view all listed auto repair shops, including
+              common services like diagnostics, tire rotation, oil changes, and
+              brake service.
             </p>
           </div>
           <div className="text-xs text-slate-500">
@@ -300,8 +312,8 @@ export default async function StatePage({ params }: StatePageProps) {
 
         {cities.length === 0 ? (
           <p className="text-sm text-slate-600">
-            We don&apos;t have practices listed for {stateName} yet. As new data
-            becomes available, cities and practices will appear here.
+            We don&apos;t have shops listed for {stateName} yet. As new data
+            becomes available, cities and shops will appear here.
           </p>
         ) : (
           <div className="mt-4 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
@@ -335,4 +347,3 @@ export default async function StatePage({ params }: StatePageProps) {
     </main>
   );
 }
-

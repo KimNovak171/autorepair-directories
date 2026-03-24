@@ -2,28 +2,26 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getCanadaDirectoryIndex } from "@/lib/canadaFacilities";
 
-const siteUrl = "https://speechtherapydirectories.com";
-
 export const metadata: Metadata = {
-  title: "Speech Therapy Shops in Canada | Provincial Directories | Speech Therapy Directories",
+  title: "Auto Repair Shops in Canada | Provincial Directories | Auto Repair Directories",
   description:
-    "Browse verified speech therapy practices across Canadian provinces. speech evaluations, articulation therapy, language support, and more — all rated 3 stars or higher.",
+    "Browse verified auto repair shops across Canadian provinces. Diagnostics, brake service, tire rotation, and more — all rated 3 stars or higher.",
   alternates: {
     canonical: "/canada",
   },
   openGraph: {
-    title: "Speech Therapy Shops in Canada | Provincial Directories | Speech Therapy Directories",
+    title: "Auto Repair Shops in Canada | Provincial Directories | Auto Repair Directories",
     description:
-      "Browse verified speech therapy practices across Canadian provinces. speech evaluations, articulation therapy, language support, and more.",
+      "Browse verified auto repair shops across Canadian provinces. Diagnostics, brake service, tire rotation, and more.",
     url: "/canada",
-    siteName: "SpeechTherapyDirectories.com",
+    siteName: "AutoRepairDirectories.com",
     type: "website",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Canada speech therapy practice directory preview",
+        alt: "Canada auto repair shop directory preview",
       },
     ],
   },
@@ -38,14 +36,14 @@ export default async function CanadaLandingPage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
           <div className="space-y-6 text-surface">
             <p className="inline-flex rounded-full bg-navy-soft/80 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-gold-soft ring-1 ring-gold-soft/40">
-              Canadian Speech Therapy Shop Directories
+              Canadian Auto Repair Shop Directories
             </p>
             <h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
-              Speech Therapy Shops in Canada — Province by Province
+              Auto Repair Shops in Canada — Province by Province
             </h1>
             <p className="max-w-2xl text-balance text-sm sm:text-base text-surface/80">
-              Verified speech therapy practices and services across Canadian provinces.
-              Every practice rated 3★ or higher on Google Maps.
+              Verified auto repair shops and services across Canadian provinces.
+              Every shop rated 3★ or higher on Google Maps.
             </p>
           </div>
 
@@ -54,7 +52,7 @@ export default async function CanadaLandingPage() {
               Choose a province
             </h2>
             <p className="mt-2 text-sm text-white/90">
-              Browse verified speech therapy practices by province, then drill down
+              Browse verified auto repair shops by province, then drill down
               by city to compare services and contact details.
             </p>
             <p className="mt-2 text-sm font-medium text-white">
