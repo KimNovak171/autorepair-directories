@@ -108,6 +108,12 @@ export default async function RootLayout({
                     Contact
                   </Link>
                   <Link
+                    href="/blog"
+                    className="text-xs font-medium text-white/90 hover:text-gold-soft transition-colors"
+                  >
+                    Blog
+                  </Link>
+                  <Link
                     href="/advertise"
                     className="inline-flex items-center rounded-full bg-teal px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-teal-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                   >
