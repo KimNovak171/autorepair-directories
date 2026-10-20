@@ -147,6 +147,9 @@ export default function RootLayout({
                 <Link href="/advertise" className="hover:text-gold">
                   Advertise
                 </Link>
+                <Link href="/claim" className="hover:text-gold">
+                  Verify Your Listing
+                </Link>
                 <Link href="/advertise" className="hover:text-gold">
                   For auto repair shops
                 </Link>
