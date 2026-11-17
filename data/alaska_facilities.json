@@ -137,7 +137,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-302-4633",
-    "website": "https://www.bmwofanchorage.com/service/default.htm%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dservice",
+    "website": "https://www.bmwofanchorage.com/service/default.htm?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=service",
     "rating": 4.9,
     "reviews": 137,
     "recommended": true
@@ -267,7 +267,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "855-553-3128",
-    "website": "https://www.minianchorage.com/service/index.htm%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dservice",
+    "website": "https://www.minianchorage.com/service/index.htm?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=service",
     "rating": 4.8,
     "reviews": 13,
     "recommended": true
@@ -280,7 +280,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-313-5509",
-    "website": "https://www.lithiakiaanchorage.com/service/default.htm%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dservice",
+    "website": "https://www.lithiakiaanchorage.com/service/default.htm?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=service",
     "rating": 4.8,
     "reviews": 200,
     "recommended": true
@@ -371,7 +371,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-793-8270",
-    "website": "https://kddiscounttire.com/%3Futm_source%3Dyext%26utm_medium%3Dlisting%26utm_campaign%3Dgoogle",
+    "website": "https://kddiscounttire.com/?utm_source=yext&utm_medium=listing&utm_campaign=google",
     "rating": 4.7,
     "reviews": 279,
     "recommended": true
@@ -423,7 +423,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-201-8052",
-    "website": "http://907acar.com/%3Futm_source%3Dgmb%26utm_medium%3Dreferral",
+    "website": "http://907acar.com/?utm_source=gmb&utm_medium=referral",
     "rating": 4.6,
     "reviews": 38,
     "recommended": true
@@ -540,7 +540,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-276-1197",
-    "website": "https://www.midas.com/store/ak/anchorage/1255-south-bragaw-street-99508%3Fshopnum%3D1117%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODU4ODMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "website": "https://www.midas.com/store/ak/anchorage/1255-south-bragaw-street-99508?shopnum=1117&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODU4ODMtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
     "rating": 4.5,
     "reviews": 1146,
     "recommended": true
@@ -592,7 +592,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-562-8370",
-    "website": "https://www.pointstire.com/anchorage%3Futm_source%3Dextnet%26utm_medium%3Dyext",
+    "website": "https://www.pointstire.com/anchorage?utm_source=extnet&utm_medium=yext",
     "rating": 4.5,
     "reviews": 422,
     "recommended": true
@@ -787,7 +787,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-313-5505",
-    "website": "https://www.lithiahyundaianchorage.com/service-center.htm%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dservice",
+    "website": "https://www.lithiahyundaianchorage.com/service-center.htm?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=service",
     "rating": 4.4,
     "reviews": 442,
     "recommended": true
@@ -800,7 +800,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-278-4506",
-    "website": "https://www.midas.com/store/ak/anchorage/711-e-northern-lights-boulevard-99503%3Fshopnum%3D1965%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODYwODEtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "website": "https://www.midas.com/store/ak/anchorage/711-e-northern-lights-boulevard-99503?shopnum=1965&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODYwODEtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
     "rating": 4.3,
     "reviews": 1176,
     "recommended": true
@@ -826,7 +826,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-522-1120",
-    "website": "https://www.midas.com/store/ak/anchorage/8100-old-seward-highway-99518%3Fshopnum%3D1594%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODYwMTUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "website": "https://www.midas.com/store/ak/anchorage/8100-old-seward-highway-99518?shopnum=1594&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODYwMTUtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
     "rating": 4.3,
     "reviews": 810,
     "recommended": true
@@ -891,7 +891,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-279-9641",
-    "website": "https://www.swickardanchorage.com/service-parts-specials.html%3Futm_source%3DGoogle%2Bmy%2BBusiness%26utm_medium%3Dorganic",
+    "website": "https://www.swickardanchorage.com/service-parts-specials.html?utm_source=Google+my+Business&utm_medium=organic",
     "rating": 4.3,
     "reviews": 119,
     "recommended": true
@@ -995,7 +995,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "866-591-3517",
-    "website": "https://www.kendallfordanchorage.com/quick-lane/%3Futm_source%3Dgoogle%26utm_medium%3Dlisting%26utm_campaign%3Dgooglebusiness",
+    "website": "https://www.kendallfordanchorage.com/quick-lane/?utm_source=google&utm_medium=listing&utm_campaign=googlebusiness",
     "rating": 4.1,
     "reviews": 52,
     "recommended": true
@@ -1021,7 +1021,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-268-2861",
-    "website": "https://www.meineke.com/locations/ak/anchorage-2932/%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgbp_website",
+    "website": "https://www.meineke.com/locations/ak/anchorage-2932/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website",
     "rating": 4.0,
     "reviews": 1067,
     "recommended": true
@@ -1138,7 +1138,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-561-6222",
-    "website": "https://www.lithiabodyshopak.com/%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dbodyshop",
+    "website": "https://www.lithiabodyshopak.com/?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=bodyshop",
     "rating": 3.5,
     "reviews": 160,
     "recommended": true
@@ -1242,7 +1242,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-406-5282",
-    "website": "https://m.facebook.com/profile.php%3Fid%3D100054379606624",
+    "website": "https://m.facebook.com/profile.php?id=100054379606624",
     "rating": 4.9,
     "reviews": 12,
     "recommended": true
@@ -1307,7 +1307,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-424-7278",
-    "website": "https://www.napaonline.com/en/AK/Cordova/store/27828%3Fcid%3Dpl_jobber_google_dac_27828_ao",
+    "website": "https://www.napaonline.com/en/AK/Cordova/store/27828?cid=pl_jobber_google_dac_27828_ao",
     "rating": 4.7,
     "reviews": 13,
     "recommended": true
@@ -1333,7 +1333,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-842-4200",
-    "website": "https://www.napaonline.com/en/AK/Dillingham/store/22318%3Fcid%3Dpl_jobber_google_dac_22318_ao",
+    "website": "https://www.napaonline.com/en/AK/Dillingham/store/22318?cid=pl_jobber_google_dac_22318_ao",
     "rating": 4.1,
     "reviews": 24,
     "recommended": true
@@ -1398,7 +1398,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-444-8404",
-    "website": "https://www.facebook.com/profile.php%3Fid%3D100089573800715",
+    "website": "https://www.facebook.com/profile.php?id=100089573800715",
     "rating": 5.0,
     "reviews": 15,
     "recommended": true
@@ -1424,7 +1424,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-622-1500",
-    "website": "https://www.midas.com/store/ak/eagle-river/12450-old-glenn-highway-99577%3Fshopnum%3D6997%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODY5MzgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "website": "https://www.midas.com/store/ak/eagle-river/12450-old-glenn-highway-99577?shopnum=6997&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODY5MzgtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
     "rating": 4.5,
     "reviews": 833,
     "recommended": true
@@ -1502,7 +1502,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-694-3536",
-    "website": "https://www.napaonline.com/en/AK/Eagle-River/store/24233%3Fcid%3Dpl_jobber_google_dac_24233_ao",
+    "website": "https://www.napaonline.com/en/AK/Eagle-River/store/24233?cid=pl_jobber_google_dac_24233_ao",
     "rating": 4.2,
     "reviews": 64,
     "recommended": true
@@ -1632,7 +1632,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-455-7450",
-    "website": "https://www.metropolitangarage.com/%3Futm_source%3DGMB%26utm_medium%3Dorganic%26utm_campaign%3DGMB",
+    "website": "https://www.metropolitangarage.com/?utm_source=GMB&utm_medium=organic&utm_campaign=GMB",
     "rating": 4.9,
     "reviews": 619,
     "recommended": true
@@ -1658,7 +1658,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-313-6981",
-    "website": "https://www.fairbankschevy.com/service%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dservic",
+    "website": "https://www.fairbankschevy.com/service?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=servic",
     "rating": 4.8,
     "reviews": 147,
     "recommended": true
@@ -1710,7 +1710,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "855-617-6700",
-    "website": "https://simardautomotive.com/gaffney/%3Futm_campaign%3Dgmb%26utm_source%3Dgmb",
+    "website": "https://simardautomotive.com/gaffney/?utm_campaign=gmb&utm_source=gmb",
     "rating": 4.7,
     "reviews": 289,
     "recommended": true
@@ -1801,7 +1801,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-531-7924",
-    "website": "http://pearsonautoak.com/%3Futm_campaign%3Dgmb",
+    "website": "http://pearsonautoak.com/?utm_campaign=gmb",
     "rating": 4.6,
     "reviews": 663,
     "recommended": true
@@ -1840,7 +1840,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "866-931-6692",
-    "website": "https://simardautomotive.com/illinois/%3Futm_campaign%3Dgmb",
+    "website": "https://simardautomotive.com/illinois/?utm_campaign=gmb",
     "rating": 4.6,
     "reviews": 215,
     "recommended": true
@@ -1853,7 +1853,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-479-6262",
-    "website": "https://www.midas.com/store/ak/fairbanks/3449-airport-way-99701%3Fshopnum%3D1645%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODYwMjktNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "website": "https://www.midas.com/store/ak/fairbanks/3449-airport-way-99701?shopnum=1645&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODYwMjktNzE1LWxvY2F0aW9uLndlYnNpdGU=",
     "rating": 4.6,
     "reviews": 620,
     "recommended": true
@@ -1866,7 +1866,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "855-617-4700",
-    "website": "https://simardautomotive.com/aeronca-ave/%3Futm_campaign%3Dgmb%26utm_source%3Dgmb",
+    "website": "https://simardautomotive.com/aeronca-ave/?utm_campaign=gmb&utm_source=gmb",
     "rating": 4.6,
     "reviews": 350,
     "recommended": true
@@ -1983,7 +1983,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "855-617-6900",
-    "website": "https://simardautomotive.com/cushman/%3Futm_campaign%3Dgmb",
+    "website": "https://simardautomotive.com/cushman/?utm_campaign=gmb",
     "rating": 4.4,
     "reviews": 166,
     "recommended": true
@@ -2139,7 +2139,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "855-981-5614",
-    "website": "https://www.subarufairbanks.com/service/%3Futm_source%3Dgoogle%26utm_medium%3Dgmbsplisting%26utm_campaign%3Dgmbsp",
+    "website": "https://www.subarufairbanks.com/service/?utm_source=google&utm_medium=gmbsplisting&utm_campaign=gmbsp",
     "rating": 3.7,
     "reviews": 9,
     "recommended": true
@@ -2191,7 +2191,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-766-2458",
-    "website": "https://www.napaonline.com/en/AK/Haines/store/20558%3Fcid%3Dpl_jobber_google_dac_20558_ao",
+    "website": "https://www.napaonline.com/en/AK/Haines/store/20558?cid=pl_jobber_google_dac_20558_ao",
     "rating": 2.7,
     "reviews": 15,
     "recommended": false
@@ -2477,7 +2477,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-713-7876",
-    "website": "https://www.facebook.com/profile.php%3Fid%3D100088875432104",
+    "website": "https://www.facebook.com/profile.php?id=100088875432104",
     "rating": 4.4,
     "reviews": 7,
     "recommended": true
@@ -2529,7 +2529,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-202-7405",
-    "website": "https://www.lesschwab.com/stores/ak/juneau/8555-airport-blvd%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgmb-homepage",
+    "website": "https://www.lesschwab.com/stores/ak/juneau/8555-airport-blvd?utm_source=google&utm_medium=organic&utm_campaign=gmb-homepage",
     "rating": 4.1,
     "reviews": 156,
     "recommended": true
@@ -2659,7 +2659,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "844-643-5707",
-    "website": "https://www.juneauhonda.com/service/%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgmb_listing_service",
+    "website": "https://www.juneauhonda.com/service/?utm_source=google&utm_medium=organic&utm_campaign=gmb_listing_service",
     "rating": null,
     "reviews": 0,
     "recommended": false
@@ -2750,7 +2750,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-283-3513",
-    "website": "https://www.napaonline.com/en/AK/Kenai/store/27436%3Fcid%3Dpl_gpc_google_dac_27436_ao",
+    "website": "https://www.napaonline.com/en/AK/Kenai/store/27436?cid=pl_gpc_google_dac_27436_ao",
     "rating": 4.5,
     "reviews": 63,
     "recommended": true
@@ -2763,7 +2763,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "866-387-8047",
-    "website": "https://www.kendallfordkenai.com/quick-lane/%3Futm_source%3Dgoogle%26utm_medium%3Dlisting%26utm_campaign%3Dgooglebusiness",
+    "website": "https://www.kendallfordkenai.com/quick-lane/?utm_source=google&utm_medium=listing&utm_campaign=googlebusiness",
     "rating": 4.2,
     "reviews": 158,
     "recommended": true
@@ -3036,7 +3036,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-442-2400",
-    "website": "https://www.napaonline.com/en/AK/Kotzebue/store/23255%3Fcid%3Dpl_jobber_google_dac_23255_ao",
+    "website": "https://www.napaonline.com/en/AK/Kotzebue/store/23255?cid=pl_jobber_google_dac_23255_ao",
     "rating": 3.8,
     "reviews": 10,
     "recommended": true
@@ -3062,7 +3062,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-443-2881",
-    "website": "https://www.napaonline.com/en/AK/Nome/store/500069%3Fcid%3Dpl_jobber_google_dac_500069_ao",
+    "website": "https://www.napaonline.com/en/AK/Nome/store/500069?cid=pl_jobber_google_dac_500069_ao",
     "rating": 4.6,
     "reviews": 5,
     "recommended": true
@@ -3127,7 +3127,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-313-2244",
-    "website": "http://pearsonautoak.com/%3Futm_campaign%3Dgmb",
+    "website": "http://pearsonautoak.com/?utm_campaign=gmb",
     "rating": 4.6,
     "reviews": 865,
     "recommended": true
@@ -3231,7 +3231,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-745-8575",
-    "website": "https://www.alaskaautomotive1.com/%3Futm_source%3DNEXT%26utm_medium%3DGoogle_website",
+    "website": "https://www.alaskaautomotive1.com/?utm_source=NEXT&utm_medium=Google_website",
     "rating": 4.8,
     "reviews": 63,
     "recommended": true
@@ -3244,7 +3244,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-746-5823",
-    "website": "https://www.midas.com/store/ak/palmer/1225-north-glenn-highway-99645%3Fshopnum%3D1665%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODYwMzYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "website": "https://www.midas.com/store/ak/palmer/1225-north-glenn-highway-99645?shopnum=1665&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODYwMzYtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
     "rating": 4.8,
     "reviews": 1081,
     "recommended": true
@@ -3335,7 +3335,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-745-2181",
-    "website": "https://www.napaonline.com/en/AK/Palmer/store/24011%3Fcid%3Dpl_jobber_google_dac_24011_ao",
+    "website": "https://www.napaonline.com/en/AK/Palmer/store/24011?cid=pl_jobber_google_dac_24011_ao",
     "rating": 4.3,
     "reviews": 9,
     "recommended": true
@@ -3452,7 +3452,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-224-8048",
-    "website": "https://www.napaonline.com/en/AK/Seward/store/27052%3Fcid%3Dpl_gpc_google_dac_27052_ao",
+    "website": "https://www.napaonline.com/en/AK/Seward/store/27052?cid=pl_gpc_google_dac_27052_ao",
     "rating": 4.2,
     "reviews": 66,
     "recommended": true
@@ -3569,7 +3569,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-262-9136",
-    "website": "https://ellisautorepairak.com/%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgbp",
+    "website": "https://ellisautorepairak.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
     "rating": 4.8,
     "reviews": 369,
     "recommended": true
@@ -3595,7 +3595,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-268-5012",
-    "website": "https://www.midas.com/store/ak/soldotna/43850-sterling-highway-99669%3Fshopnum%3D1284%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODU5NTMtNzE1LWxvY2F0aW9uLndlYnNpdGU%253D",
+    "website": "https://www.midas.com/store/ak/soldotna/43850-sterling-highway-99669?shopnum=1284&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODU5NTMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
     "rating": 4.6,
     "reviews": 523,
     "recommended": true
@@ -3634,7 +3634,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-262-6233",
-    "website": "https://www.napaonline.com/en/AK/Soldotna/store/26979%3Fcid%3Dpl_gpc_google_dac_26979_ao",
+    "website": "https://www.napaonline.com/en/AK/Soldotna/store/26979?cid=pl_gpc_google_dac_26979_ao",
     "rating": 4.5,
     "reviews": 69,
     "recommended": true
@@ -3777,7 +3777,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-283-3949",
-    "website": "https://www.kendalldcjrofsoldotna.com/service-department/%3Futm_source%3Dgoogle%26utm_medium%3Dgmbsplisting%26utm_campaign%3Dgmbsp",
+    "website": "https://www.kendalldcjrofsoldotna.com/service-department/?utm_source=google&utm_medium=gmbsplisting&utm_campaign=gmbsp",
     "rating": 3.8,
     "reviews": 11,
     "recommended": true
@@ -3894,7 +3894,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-852-3230",
-    "website": "https://www.facebook.com/share/1FAHCRLMW8/%3Fmibextid%3DwwXIfr",
+    "website": "https://www.facebook.com/share/1FAHCRLMW8/?mibextid=wwXIfr",
     "rating": 4.3,
     "reviews": 24,
     "recommended": true
@@ -3946,7 +3946,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-621-6444",
-    "website": "https://app.shopmonkey.cloud/public/quote-request/6dd87a32-0e73-4dfd-a1f2-00927fbc050f%3FnoExternalScripts%3D1",
+    "website": "https://app.shopmonkey.cloud/public/quote-request/6dd87a32-0e73-4dfd-a1f2-00927fbc050f?noExternalScripts=1",
     "rating": 5.0,
     "reviews": 3,
     "recommended": true
@@ -4141,7 +4141,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-313-6978",
-    "website": "https://www.wasillachevrolet.com/service.htm%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dservice",
+    "website": "https://www.wasillachevrolet.com/service.htm?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=service",
     "rating": 4.8,
     "reviews": 41,
     "recommended": true
@@ -4180,7 +4180,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-376-4788",
-    "website": "https://www.midas.com/store/ak/wasilla/1032-e-steam-commons-ave-99654%3Fshopnum%3D1318%26utm_source%3Dgoogle%26utm_medium%3Dmaps%26utm_campaign%3Dgoogle%2Bmaps%26y_source%3D1_MTE1ODU5NjUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "website": "https://www.midas.com/store/ak/wasilla/1032-e-steam-commons-ave-99654?shopnum=1318&utm_source=google&utm_medium=maps&utm_campaign=google+maps&y_source=1_MTE1ODU5NjUtNzE1LWxvY2F0aW9uLndlYnNpdGU=",
     "rating": 4.7,
     "reviews": 1240,
     "recommended": true
@@ -4232,7 +4232,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-313-6977",
-    "website": "https://www.wasilladodge.com/service/default.htm%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgoogle_my_business%26utm_content%3Dservice",
+    "website": "https://www.wasilladodge.com/service/default.htm?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_content=service",
     "rating": 4.7,
     "reviews": 1004,
     "recommended": true
@@ -4297,7 +4297,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-631-3987",
-    "website": "https://eztauto.com/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb",
+    "website": "https://eztauto.com/?utm_source=google&utm_medium=gmb",
     "rating": 4.6,
     "reviews": 72,
     "recommended": true
@@ -4492,7 +4492,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-376-5204",
-    "website": "https://www.napaonline.com/en/AK/Wasilla/store/23985%3Fcid%3Dpl_jobber_google_dac_23985_ao",
+    "website": "https://www.napaonline.com/en/AK/Wasilla/store/23985?cid=pl_jobber_google_dac_23985_ao",
     "rating": 4.3,
     "reviews": 19,
     "recommended": true
@@ -4518,7 +4518,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-891-8614",
-    "website": "https://www.meineke.com/locations/ak/wasilla-2951/%3Futm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dgbp_website",
+    "website": "https://www.meineke.com/locations/ak/wasilla-2951/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website",
     "rating": 4.2,
     "reviews": 401,
     "recommended": true
@@ -4544,7 +4544,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-373-3733",
-    "website": "https://www.napaonline.com/en/AK/Wasilla/store/804908%3Fcid%3Dpl_jobber_google_dac_804908_ao",
+    "website": "https://www.napaonline.com/en/AK/Wasilla/store/804908?cid=pl_jobber_google_dac_804908_ao",
     "rating": 4.2,
     "reviews": 23,
     "recommended": true
@@ -4583,7 +4583,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-903-7592",
-    "website": "https://www.facebook.com/profile.php%3Fid%3D100091453785564%26mibextid%3DLQQJ4d",
+    "website": "https://www.facebook.com/profile.php?id=100091453785564&mibextid=LQQJ4d",
     "rating": 3.9,
     "reviews": 11,
     "recommended": true
@@ -4609,7 +4609,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "855-981-5421",
-    "website": "https://www.kendallfordwasilla.com/service/%3Futm_source%3Dgoogle%26utm_medium%3Dgmbsplisting%26utm_campaign%3Dgmbsp",
+    "website": "https://www.kendallfordwasilla.com/service/?utm_source=google&utm_medium=gmbsplisting&utm_campaign=gmbsp",
     "rating": 3.4,
     "reviews": 31,
     "recommended": true
@@ -4648,7 +4648,7 @@
     "state": "Alaska",
     "state_code": "AK",
     "phone": "907-874-2339",
-    "website": "https://www.napaonline.com/en/AK/Wrangell/store/22989%3Fcid%3Dpl_jobber_google_dac_22989_ao",
+    "website": "https://www.napaonline.com/en/AK/Wrangell/store/22989?cid=pl_jobber_google_dac_22989_ao",
     "rating": 4.7,
     "reviews": 10,
     "recommended": true
